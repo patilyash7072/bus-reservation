@@ -1,4 +1,4 @@
-🚌 ##Bus Reservation App
+# 🚌 Bus Reservation App
 
 A Bus Reservation Web Application built using:
 
@@ -12,7 +12,7 @@ Maven
 
 This application allows users to manage bus reservations with a modern UI built using Vaadin and a secure backend powered by Spring Boot.
 
-📌 Features
+## 📌 Features
 
 User authentication & authorization (Spring Security)
 Bus management
@@ -22,7 +22,7 @@ JPA-based persistence layer
 Production-ready Vaadin frontend build
 Developer-friendly setup with DevTools
 
-🏗️ Tech Stack
+## 🏗️ Tech Stack
 
 Layer	Technology
 Backend	Spring Boot 3.5.11
@@ -34,7 +34,7 @@ Build Tool	Maven
 Java Version	21
 
 
-🔎 Configuration Notes
+## 🔎 Configuration Notes
 
 Uses schema: bus_reservation
 
@@ -45,7 +45,7 @@ Password: root
 
 ⚠️ Important: Change database credentials before deploying to production.
 
-🗄️ Database Setup (PostgreSQL)
+## 🗄️ Database Setup (PostgreSQL)
 
 Install PostgreSQL
 Create database (if not exists):
@@ -55,7 +55,7 @@ CREATE SCHEMA bus_reservation;
 
 Ensure credentials match application.properties.
 
-▶️ Running the Application
+## ▶️ Running the Application
 
 🔹 Run in Development Mode
 mvn spring-boot:run
@@ -66,15 +66,15 @@ http://localhost:8080
 Browser auto-launch is enabled:
 vaadin.launch-browser=true
 
-🚀 Build for Production
+## 🚀 Build for Production
 
 To build optimized Vaadin frontend:
 mvn clean package -Pproduction
 
 Then run:
-
 java -jar target/Bus-Reservation-App-0.0.1-SNAPSHOT.jar
-📦 Maven Dependencies Overview
+
+## 📦 Maven Dependencies Overview
 
 Key dependencies used:
 
@@ -86,7 +86,7 @@ postgresql
 lombok
 spring-boot-starter-test
 
-🔐 Security
+## 🔐 Security
 
 The application uses Spring Security for:
 Authentication
@@ -95,7 +95,7 @@ Secured routes
 
 You can configure custom login pages and role-based access.
 
-🧪 Testing
+## 🧪 Testing
 
 Run tests using:
 mvn test
@@ -104,14 +104,14 @@ Includes:
 Spring Boot Test
 Spring Security Test
 
-🛠️ Development Notes
+## 🛠️ Development Notes
 
 Uses HikariCP (default Spring Boot connection pool)
 Uses Hibernate as JPA provider
 Lombok is used to reduce boilerplate code
 DevTools enabled for hot reload during development
 
-📁 Project Structure (Typical)
+## 📁 Project Structure (Typical)
 src/
  ├── main/
  │   ├── java/com/dss/
@@ -123,7 +123,8 @@ src/
  │   └── resources/
  │       └── application.properties
  └── test/
-⚠️ Production Recommendations
+ 
+### ⚠️ Production Recommendations
 
 Before deploying:
 
@@ -134,11 +135,11 @@ Use strong passwords
 Enable HTTPS
 Configure proper user roles & access control
 
-📄 License
+## 📄 License
 
 This project is for educational/demo purposes.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Yash Patil
 Developed using Spring Boot + Vaadin ecosystem.
