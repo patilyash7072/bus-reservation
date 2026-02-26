@@ -112,17 +112,18 @@ Lombok is used to reduce boilerplate code
 DevTools enabled for hot reload during development
 
 ## 📁 Project Structure (Typical)
-src/
- ├── main/
- │   ├── java/com/dss/
- │   │   ├── config/
- │   │   ├── entity/
- │   │   ├── repository/
- │   │   ├── service/
- │   │   └── view/
- │   └── resources/
- │       └── application.properties
- └── test/
+
+src/  
+ ├── main/  
+ │   ├── java/com/dss/  
+ │   │   ├── config/  
+ │   │   ├── entity/  
+ │   │   ├── repository/  
+ │   │   ├── service/  
+ │   │   └── view/  
+ │   └── resources/  
+ │       └── application.properties  
+ └── test/  
  
 ### ⚠️ Production Recommendations
 
