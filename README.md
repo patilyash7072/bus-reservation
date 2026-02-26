@@ -2,82 +2,82 @@
 
 A Bus Reservation Web Application built using:
 
-1. Spring Boot 3.5.11  
+- Spring Boot 3.5.11  
 
-2. Vaadin 24.9  
+- Vaadin 24.9  
 
-3 .PostgreSQL  
+- PostgreSQL  
 
-4. Spring Security  
+- Spring Security  
 
-5. Spring Data JPA  
+- Spring Data JPA  
 
-6. Java 21  
+- Java 21  
 
-7. Maven  
+- Maven  
 
 This application allows users to manage bus reservations with a modern UI built using Vaadin and a secure backend powered by Spring Boot.
 
 ## 📌 Features
 
-User authentication & authorization (Spring Security)  
+- User authentication & authorization (Spring Security)  
 
-Bus management  
+- Bus management  
 
-Seat reservation system  
+- Seat reservation system  
 
-Database integration with PostgreSQL  
+- Database integration with PostgreSQL  
 
-JPA-based persistence layer  
+- JPA-based persistence layer  
 
-Production-ready Vaadin frontend build  
+- Production-ready Vaadin frontend build  
 
-Developer-friendly setup with DevTools  
+- Developer-friendly setup with DevTools  
 
 ## 🏗️ Tech Stack
 
-Layer	Technology  
+- Layer	Technology  
 
-Backend	Spring Boot 3.5.11  
+- Backend	Spring Boot 3.5.11  
 
-Frontend	Vaadin 24.9  
+- Frontend	Vaadin 24.9  
 
-Security	Spring Security  
+- Security	Spring Security  
 
-ORM	Spring Data JPA (Hibernate)  
+- ORM	Spring Data JPA (Hibernate)  
 
-Database	PostgreSQL  
+- Database	PostgreSQL  
 
-Build Tool	Maven  
+- Build Tool	Maven  
 
-Java Version	21  
+- Java Version	21  
 
 
 ## 🔎 Configuration Notes
 
-Uses schema: bus_reservation
+- Uses schema: bus_reservation
 
 Default DB:  
 
-Database: postgres  
+- Database: postgres  
 
-Username: postgres  
+- Username: postgres  
 
-Password: root  
+- Password: root  
 
 ⚠️ Important: Change database credentials before deploying to production.
 
 ## 🗄️ Database Setup (PostgreSQL)
 
-Install PostgreSQL  
+- Install PostgreSQL  
 
-Create database (if not exists):  
+- Create database (if not exists):  
 
-CREATE DATABASE postgres;  
+- CREATE DATABASE postgres;  
 
-Create schema:  
+- Create schema:  
 
-CREATE SCHEMA bus_reservation;  
+- CREATE SCHEMA bus_reservation;  
 
 Ensure credentials match application.properties.
 
@@ -85,57 +85,57 @@ Ensure credentials match application.properties.
 
 🔹 Run in Development Mode  
 
-mvn spring-boot:run
+```mvn spring-boot:run```
 
 
 Application starts at:  
 
-http://localhost:8080
+`http://localhost:8080`
 
 
 Browser auto-launch is enabled:  
 
 
-vaadin.launch-browser=true
+```vaadin.launch-browser=true```
 
 ## 🚀 Build for Production
 
 To build optimized Vaadin frontend:  
 
-mvn clean package -Pproduction
+```mvn clean package -Pproduction```
 
 
 Then run:  
 
-java -jar target/Bus-Reservation-App-0.0.1-SNAPSHOT.jar
+```java -jar target/Bus-Reservation-App-0.0.1-SNAPSHOT.jar```
 
 ## 📦 Maven Dependencies Overview
 
 Key dependencies used:
 
-spring-boot-starter-data-jpa  
+- spring-boot-starter-data-jpa  
 
-spring-boot-starter-security  
+- spring-boot-starter-security  
 
-spring-boot-starter-web  
+- spring-boot-starter-web  
 
-vaadin-spring-boot-starter  
+- vaadin-spring-boot-starter  
 
-postgresql  
+- postgresql  
 
-lombok  
+- lombok  
 
-spring-boot-starter-test  
+- spring-boot-starter-test  
 
 ## 🔐 Security
 
 The application uses Spring Security for:
 
-Authentication  
+- Authentication  
 
-Authorization  
+- Authorization  
 
-Secured routes  
+- Secured routes  
 
 You can configure custom login pages and role-based access.
 
@@ -143,24 +143,24 @@ You can configure custom login pages and role-based access.
 
 Run tests using:  
 
-mvn test
+```mvn test```
 
 
 Includes:  
 
-Spring Boot Test  
+- Spring Boot Test  
 
-Spring Security Test
+- Spring Security Test
 
 ## 🛠️ Development Notes
 
-Uses HikariCP (default Spring Boot connection pool)  
+- Uses HikariCP (default Spring Boot connection pool)  
 
-Uses Hibernate as JPA provider  
+- Uses Hibernate as JPA provider  
 
-Lombok is used to reduce boilerplate code  
+- Lombok is used to reduce boilerplate code  
 
-DevTools enabled for hot reload during development  
+- DevTools enabled for hot reload during development  
 
 ## 📁 Project Structure (Typical)
 
@@ -180,15 +180,15 @@ src/
 
 Before deploying:
 
-Change ddl-auto=create → validate or update  
+- Change ddl-auto=create → validate or update  
 
-Move DB credentials to environment variables  
+- Move DB credentials to environment variables  
 
-Disable show-sql  
+- Disable show-sql  
 
-Use strong passwords  
+- Use strong passwords  
 
-Enable HTTPS  
+- Enable HTTPS  
 
 Configure proper user roles & access control  
 
