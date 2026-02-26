@@ -1,0 +1,14 @@
+package com.dss.bus_reservation.dto;
+
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Builder
+public class BookingResponseDTO {
+    private Long bookingId;
+    private Long paymentId;
+}
